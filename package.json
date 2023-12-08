@@ -8,15 +8,17 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "nyc --reporter=html --reporter=text mocha"
+    "test": "c8 -r lcov --exclude library/src/.internal/** --exclude test/** --exclude library/src/isArguments.js --exclude library/src/isArrayLike.js --exclude library/src/isBuffer.js --exclude library/src/isLength.js --exclude library/src/isObjectLike.js --exclude library/src/isSymbol.js --exclude library/src/isTypedArray.js --exclude library/src/keys.js mocha"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chai": "^4.3.10",
+    "c8": "^8.0.1",
     "coveralls": "^3.1.1"
   },
   "devDependencies": {
-    "nyc": "^15.1.0"
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "mocha-lcov-reporter": "^1.3.0"
   }
 }
