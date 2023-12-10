@@ -10,6 +10,7 @@ jobs:
         with:
           node-version: 20.9.0
       - run: npm install
+      - run: chmod -R a+rwx library/
       - run: npm test
       - name: Coveralls
         uses: coverallsapp/github-action@v2
