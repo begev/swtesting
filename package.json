@@ -8,7 +8,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "c8 --exclude library/src/.internal/** --exclude test/** --exclude library/src/isArguments.js --exclude library/src/isArrayLike.js --exclude library/src/isBuffer.js --exclude library/src/isLength.js --exclude library/src/isObjectLike.js --exclude library/src/isSymbol.js --exclude library/src/isTypedArray.js --exclude library/src/keys.js mocha"
+    "test": "mocha"
   },
   "author": "",
   "license": "ISC",
