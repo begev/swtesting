@@ -3,6 +3,11 @@ import words from '../library/src/words.js';
 
 describe('words', () => {
     
+    it('should return an empty array for null input', () => {
+        const result = words(null);
+        expect(result).to.deep.equal([]);
+    });
+    
     it('should split a string into words', () => {
         const string = 'apple banana cherry';
         const result = words(string);
