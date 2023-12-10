@@ -21,4 +21,14 @@ describe('add.js tests', () => {
 
         expect(result).to.equal(expectedOutput);
     });
+
+    it('should add a list of values together', () => {
+        const numbers = [1, 2, 3, 4, 5];
+        let result = 0;
+        for (let number of numbers) {
+            result = add(result, number);
+        }
+        expect(result).to.equal(15);
+    });
+      
 });
