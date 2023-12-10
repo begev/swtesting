@@ -8,7 +8,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "c8 -r lcov --include library/src/add.js --include library/src/ceil.js --include library/src/countBy.js --include library/src/defaultTo.js --include library/src/filter.js --include library/src/slice.js --include library/src/toString.js --include library/src/upperFirst.js --include library/src/words.js mocha"
+    "test": "c8 -r lcov --include library/src/add.js --include library/src/ceil.js --include library/src/countBy.js --include library/src/defaultTo.js --include library/src/filter.js --include library/src/slice.js --include library/src/toString.js --include library/src/upperFirst.js mocha"
   },
   "author": "",
   "license": "ISC",
