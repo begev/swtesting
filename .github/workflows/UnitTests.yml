@@ -9,8 +9,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20.9.0
-      - run: npm install
-      - run: chmod -R a+rwx library/
+      - run: npm ci
       - run: npm test
       - name: Coveralls
         uses: coverallsapp/github-action@v2
