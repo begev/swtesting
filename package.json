@@ -1,0 +1,22 @@
+{
+  "name": "swtesting",
+  "version": "1.0.0",
+  "description": "test",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "c8 -r lcov --include library/src/add.js --include library/src/ceil.js --include library/src/countBy.js --include library/src/defaultTo.js --include library/src/filter.js --include library/src/slice.js --include library/src/toString.js --include library/src/upperFirst.js --include library/src/words.js mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "c8": "^8.0.1",
+    "chai": "^4.3.10",
+    "coveralls": "^3.1.1",
+    "mocha": "^10.2.0",
+    "mocha-lcov-reporter": "^1.3.0"
+  }
+}
